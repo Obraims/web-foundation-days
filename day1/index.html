@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes - Home</title>
+</head>
+<body>
+    <header>
+        <h1>QuickNotes</h1>
+        <p>Your simple note-taking app.</p>
+        <!-- Add this nav section to your existing lab header -->
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Notes</h2>
+            <p>Capture your thoughts instantly and stay organized.</p>
+            <form>
+                <div>
+                    <label for="note-title">Title:</label>
+                    <input type="text" id="note-title" name="title">
+                </div>
+                <br>
+                <div>
+                    <label for="note-content">Note:</label>
+                    <textarea id="note-content" name="content" rows="4" cols="50"></textarea>
+                </div>
+                <br>
+                <button type="submit">Save Note</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Saved Notes</h2>
+            <ul>
+                <li>
+                    <h3>Meeting Reminders</h3>
+                    <p>Prepare presentation slides for tomorrow's team sync at 10 AM.</p>
+                </li>
+                <li>
+                    <h3>Grocery List</h3>
+                    <p>Milk, eggs, whole grain bread, and fresh fruit.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuickNotes</p>
+    </footer>
+</body>
+</html>
