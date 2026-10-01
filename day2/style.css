@@ -1,0 +1,161 @@
+/* 1. Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+ 
+/* 2. Header */
+header {
+  background-color: #8e0000;
+  color: white;
+  text-align: center;
+  padding: 24px 16px 16px;
+}
+ 
+header h1 {
+  margin: 0;
+}
+ 
+/* 3. Navigation with Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+ 
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+ 
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+ 
+/* 4. Main content and section cards */
+main {
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+ 
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+ 
+h2,
+h3 {
+  color: #8e0000;
+  margin-top: 0;
+}
+ 
+/* 5. Features as a responsive grid of cards */
+.features {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+ 
+.features li {
+  background-color: #e6f6f1;
+  border-left: 4px solid #0ba184;
+  padding: 12px;
+  border-radius: 6px;
+}
+ 
+/* 6. Shortcuts table */
+table {
+  width: 100%;
+  border-collapse: collapse; /* merge double borders into one */
+}
+ 
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+ 
+th {
+  background-color: #f0f0f0;
+}
+ 
+/* 7. Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+ 
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit; /* use the page font instead of the browser default */
+}
+ 
+input:focus,
+textarea:focus {
+  outline: 2px solid #0ba184;
+  border-color: #0ba184;
+}
+ 
+button {
+  align-self: flex-start;
+  background-color: #0ba184;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+ 
+button:hover {
+  background-color: #088a70;
+  transform: translateY(-2px);
+}
+ 
+/* 8. Footer */
+footer {
+  text-align: center;
+  color: #777;
+  padding: 16px;
+}
+ 
+/* 9. Small screens */
+@media (max-width: 600px) {
+  header {
+    padding: 16px 12px 12px;
+  }
+ 
+  header h1 {
+    font-size: 1.6rem;
+  }
+ 
+  section {
+    padding: 16px;
+  }
+}
