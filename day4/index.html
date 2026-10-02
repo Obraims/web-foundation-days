@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Live Character & Word Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Day 4 - Note Counter & Theme Toggle</h1>
+        <button id="theme-toggle" type="button">Dark mode</button>
+    </header>
+
+    <main>
+        <div class="note-container">
+            <label for="note-text">Write your note:</label>
+            <textarea id="note-text" name="note-text" rows="8" placeholder="Type your note here..."></textarea>
+            
+            <div class="counter-container">
+                <p id="char-count">0 / 200 characters</p>
+                <p id="word-count">0 words</p>
+            </div>
+
+            <div class="button-container">
+                <button id="clear-btn" type="button">Clear</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
